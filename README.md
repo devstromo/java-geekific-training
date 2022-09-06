@@ -3,5 +3,11 @@ A repo to training Geekific youtube channel tutorials(https://www.youtube.com/c/
 
 
 ## Tree
-- Trees
+- ###Sorting
+  - Insertion Sort
+  - Mergesort
+  - Tim Sort
+ 
+- ###Trees
   - Binary Search Tree
+
