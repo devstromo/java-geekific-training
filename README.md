@@ -10,4 +10,5 @@ A repo to training Geekific youtube channel tutorials(https://www.youtube.com/c/
  
 - ###Trees
   - Binary Search Tree
+  - AVL
 
