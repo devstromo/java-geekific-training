@@ -1,7 +1,6 @@
 # java-geekific-training
 A repo to training Geekific youtube channel tutorials(https://www.youtube.com/c/Geekific)
 
-
 ## Tree
 - ###Sorting
   - Insertion Sort
@@ -12,3 +11,6 @@ A repo to training Geekific youtube channel tutorials(https://www.youtube.com/c/
   - Binary Search Tree
   - AVL
 
+- ###Graph
+  - DFS
+  - BFS
