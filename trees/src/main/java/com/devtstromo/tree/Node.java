@@ -1,4 +1,4 @@
-package com.devtstromo;
+package com.devtstromo.tree;
 
 import lombok.Data;
 import lombok.NonNull;

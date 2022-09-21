@@ -1,4 +1,4 @@
-package com.devtstromo;
+package com.devtstromo.tree;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

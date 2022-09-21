@@ -1,9 +1,6 @@
-package com.devtstromo;
+package com.devtstromo.tree;
 
-import static java.lang.Math.max;
-
-public class AVLTree<T extends Comparable<T>> implements Tree<T> {
-
+public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
     private Node<T> root;
 
     @Override
@@ -69,19 +66,45 @@ public class AVLTree<T extends Comparable<T>> implements Tree<T> {
         }
     }
 
-    private Node<T> insert(T data, Node<T> node) {
+    private void insert(T data, Node<T> node) {
+        if (data.compareTo(node.getData()) < 0) {
+            if (node.getLeftChild() == null) {
+                node.setLeftChild(new Node<>(data));
+            } else {
+                insert(data, node.getLeftChild());
+            }
+        } else if (data.compareTo(node.getData()) > 0) {
+            if (node.getRightChild() == null) {
+                node.setRightChild(new Node<>(data));
+            } else {
+                insert(data, node.getRightChild());
+            }
+        }
+    }
+
+    /**
+     * Insert alternative
+     *
+     * <pre>
+     *      root = insert(data, root);
+     *      return this;
+     * </pre>
+     *
+     * @param data value to be added to the tree
+     * @param node first node to traverse
+     * @return input node
+     */
+    private Node<T> insertAlternative(T data, Node<T> node) {
         if (node == null) {
             return new Node<>(data);
         }
         if (data.compareTo(node.getData()) < 0) {
-            node.setLeftChild(insert(data, node.getLeftChild()));
+            node.setLeftChild(insertAlternative(data, node.getLeftChild()));
         } else if (data.compareTo(node.getData()) > 0) {
-            node.setRightChild(insert(data, node.getRightChild()));
-        } else {
-            return node;
+            node.setRightChild(insertAlternative(data, node.getRightChild()));
+
         }
-        updateHeight(node);
-        return applyRotation(node);
+        return node;
     }
 
     private Node<T> delete(T data, Node<T> node) {
@@ -105,60 +128,6 @@ public class AVLTree<T extends Comparable<T>> implements Tree<T> {
             node.setLeftChild(delete(node.getData(), node.getLeftChild()));
 
         }
-        updateHeight(node);
-        return applyRotation(node);
-    }
-
-    private void updateHeight(Node<T> node) {
-        int maxHeight = max(height(node.getLeftChild()), height(node.getRightChild()));
-        node.setHeight(maxHeight + 1);
-    }
-
-    private Node<T> applyRotation(Node<T> node) {
-        int balance = balance(node);
-        if (balance > 1) {
-            // left-heavy
-            if (balance(node.getLeftChild()) < 0) {
-                node.setLeftChild(rotateLeft(node.getLeftChild()));
-            }
-            return rotateRight(node);
-        }
-        if (balance < -1) {
-            // right-heavy
-            if (balance(node.getRightChild()) > 0) {
-                node.setRightChild(rotateRight(node.getRightChild()));
-            }
-            return rotateLeft(node);
-        }
-
-        return null;
-    }
-
-    private Node<T> rotateRight(Node<T> node) {
-        Node<T> leftNode = node.getLeftChild();
-        Node<T> centerNode = leftNode.getRightChild();
-        leftNode.setRightChild(node);
-        node.setLeftChild(centerNode);
-        updateHeight(node);
-        updateHeight(leftNode);
-        return leftNode;
-    }
-
-    private Node<T> rotateLeft(Node<T> node) {
-        Node<T> rightNode = node.getRightChild();
-        Node<T> centerNode = rightNode.getLeftChild();
-        rightNode.setLeftChild(node);
-        node.setRightChild(centerNode);
-        updateHeight(node);
-        updateHeight(rightNode);
-        return rightNode;
-    }
-
-    private int balance(Node<T> node) {
-        return node != null ? height(node.getLeftChild()) - height(node.getRightChild()) : 0;
-    }
-
-    private int height(Node<T> node) {
-        return node != null ? node.getHeight() : 0;
+        return node;
     }
 }

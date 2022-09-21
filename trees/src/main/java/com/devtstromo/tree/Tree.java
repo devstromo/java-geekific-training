@@ -1,4 +1,4 @@
-package com.devtstromo;
+package com.devtstromo.tree;
 
 public interface Tree<T extends Comparable<T>> {
 
