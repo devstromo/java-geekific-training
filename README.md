@@ -14,3 +14,6 @@ A repo to training Geekific youtube channel tutorials(https://www.youtube.com/c/
 - ###Graph
   - DFS
   - BFS
+
+- ###Design Patterns
+  - Observer
