@@ -1,19 +1,23 @@
 # java-geekific-training
-A repo to training Geekific youtube channel tutorials(https://www.youtube.com/c/Geekific)
 
-## Tree
-- ###Sorting
+A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channel tutorials.
+
+- ### Sorting
+
   - Insertion Sort
   - Mergesort
   - Tim Sort
- 
-- ###Trees
+
+- ### Trees
+
   - Binary Search Tree
   - AVL
 
-- ###Graph
+- ### Graph
+
   - DFS
   - BFS
 
-- ###Design Patterns
+- ### Design Patterns
+
   - Observer
