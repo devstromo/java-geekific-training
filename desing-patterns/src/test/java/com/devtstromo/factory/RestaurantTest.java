@@ -2,6 +2,11 @@ package com.devtstromo.factory;
 
 import org.junit.jupiter.api.Test;
 
+import com.devtstromo.factory.method.BeefBurgerRestaurant;
+import com.devtstromo.factory.method.Burger;
+import com.devtstromo.factory.method.Restaurant;
+import com.devtstromo.factory.method.VeggieBurgerRestaurant;
+
 class RestaurantTest {
 
     @Test

@@ -1,4 +1,4 @@
-package com.devtstromo.factory;
+package com.devtstromo.factory.method;
 
 public class VeggieBurger implements Burger {
 
