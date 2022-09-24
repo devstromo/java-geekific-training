@@ -1,6 +1,4 @@
-package com.devtstromo.graph;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.devtstromo;
 
 import java.util.Arrays;
 import java.util.List;

@@ -15,6 +15,8 @@
     <modules>
         <module>trees</module>
         <module>sorting-algorithms</module>
+        <module>desing-patterns</module>
+        <module>graphs</module>
     </modules>
 
 

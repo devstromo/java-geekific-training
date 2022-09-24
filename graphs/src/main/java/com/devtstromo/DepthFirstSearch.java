@@ -1,4 +1,4 @@
-package com.devtstromo.graph;
+package com.devtstromo;
 
 import java.util.Deque;
 import java.util.LinkedList;

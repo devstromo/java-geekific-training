@@ -1,4 +1,4 @@
-package com.devtstromo.patterns.observer;
+package com.devtstromo.observer;
 
 public class EmailMsgListener implements EventListener {
     private final String email;

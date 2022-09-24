@@ -1,4 +1,4 @@
-package com.devtstromo.patterns.observer;
+package com.devtstromo.observer;
 
 public class Store {
     private final NotificationService notificationService;

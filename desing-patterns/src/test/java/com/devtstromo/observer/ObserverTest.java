@@ -1,4 +1,4 @@
-package com.devtstromo.patterns.observer;
+package com.devtstromo.observer;
 
 import org.junit.jupiter.api.Test;
 

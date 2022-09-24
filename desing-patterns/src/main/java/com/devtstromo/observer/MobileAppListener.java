@@ -1,4 +1,4 @@
-package com.devtstromo.patterns.observer;
+package com.devtstromo.observer;
 
 public class MobileAppListener implements EventListener {
     private final String username;
