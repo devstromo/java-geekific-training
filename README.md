@@ -17,7 +17,14 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
 
   - DFS
   - BFS
+  - Dijkstra's Algorithm
 
 - ### Design Patterns
 
   - Observer
+  - Factory
+  - Abstract Factory
+  - Prototype
+  - Singleton
+  - Builder
+  - Chain of responsibility
