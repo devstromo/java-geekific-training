@@ -29,3 +29,4 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
   - Singleton
   - Builder
   - Chain of responsibility
+  - Command Pattern
