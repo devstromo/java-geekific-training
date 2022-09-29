@@ -30,3 +30,4 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
   - Builder
   - Chain of responsibility
   - Command Pattern
+  - Template method
