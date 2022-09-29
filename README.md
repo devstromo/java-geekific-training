@@ -8,6 +8,8 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
   - Mergesort
   - Shell Sort  **W**:Ο(n<sup>2</sup>) - **A**:Ο(nlog(n)) - **B**:Ο(nlog(n))
   - Tim Sort
+  - Counting Sort
+  - Quicksort
 
 - ### Trees
 
