@@ -15,6 +15,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
 
   - Binary Search Tree
   - AVL
+  - Red-Black Trees
 
 - ### Graph
 
