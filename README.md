@@ -10,6 +10,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
   - Tim Sort
   - Counting Sort
   - Quicksort
+  - Radix Sort
 
 - ### Trees
 
