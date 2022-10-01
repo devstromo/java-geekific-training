@@ -17,6 +17,7 @@
         <module>sorting-algorithms</module>
         <module>desing-patterns</module>
         <module>graphs</module>
+        <module>search-algorithms</module>
     </modules>
 
 

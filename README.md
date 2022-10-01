@@ -37,3 +37,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
   - Command Pattern
   - Template method
   - Facade Pattern
+
+- ### Search Algorithms(Add by me)
+
+  - Linear Search

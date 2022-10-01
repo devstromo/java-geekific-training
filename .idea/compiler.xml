@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="graphs" />
+        <module name="search-algorithms" />
         <module name="desing-patterns" />
         <module name="trees" />
         <module name="sorting-algorithms" />
