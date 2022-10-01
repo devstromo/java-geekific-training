@@ -23,6 +23,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
   - DFS
   - BFS
   - Dijkstra's Algorithm
+  - Ford-Fulkerson(Max Flow)
 
 - ### Design Patterns
 
