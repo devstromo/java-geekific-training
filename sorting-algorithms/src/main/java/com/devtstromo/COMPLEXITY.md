@@ -89,6 +89,8 @@ Counting sort is used when: (1)there are smaller integers with multiple counts, 
 
 ### BUCKET SORT
 
+Bucket Sort shines if the elements we are trying to sort are uniformly distributed inside the buckets
+
 - Best: Ω(n+k)
 - Average: Θ(n)
 - Worst: O(n<sup>2</sup>)
