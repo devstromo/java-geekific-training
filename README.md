@@ -38,6 +38,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Template method
     - Facade Pattern
     - Mediator Pattern
+    - Memento Pattern
 
 - ### Search Algorithms(Add by me)
 
