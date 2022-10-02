@@ -8,7 +8,10 @@ public record BinarySearch<T extends Comparable<T>>(T[] arr) implements Search<T
         int middle;
 
         while (min <= max) {
-            middle = (max + min) / 2;
+            // * middle = (max + min) / 2 could contain bugs
+            // * it fails for larger values of int variables low and high
+            // *  if the sum of low and high is greater than the maximum positive int value(2^31 – 1 )
+            middle = min + (max - min) / 2;
             if (arr[middle].compareTo(data) < 0) {
                 min = middle + 1;
             } else if (arr[middle].compareTo(data) > 0) {
