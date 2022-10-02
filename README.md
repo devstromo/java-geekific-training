@@ -41,3 +41,5 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
 - ### Search Algorithms(Add by me)
 
   - Linear Search
+  - Fibonacci Search
+  - Binary Search

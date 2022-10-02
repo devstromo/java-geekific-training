@@ -2,12 +2,7 @@ package com.devtstromo;
 
 import static java.lang.Math.min;
 
-public class FibonacciSearch<T extends Comparable<T>> implements Search<T> {
-    private final T[] arr;
-
-    public FibonacciSearch(T[] arr) {
-        this.arr = arr;
-    }
+public record FibonacciSearch<T extends Comparable<T>>(T[] arr) implements Search<T> {
 
     @Override
     public int search(T data) {
