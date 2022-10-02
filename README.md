@@ -6,7 +6,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
 
     - Insertion Sort
     - Mergesort
-    - Shell Sort  **W**:Ο(n<sup>2</sup>) - **A**:Ο(nlog(n)) - **B**:Ο(nlog(n))
+    - Shell Sort
     - Tim Sort
     - Counting Sort
     - Quicksort
