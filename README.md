@@ -46,3 +46,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Fibonacci Search
     - Binary Search
     - Jump Search
+
+- ### Data Compression
+
+    - Run-Length Encoding

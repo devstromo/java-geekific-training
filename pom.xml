@@ -18,6 +18,7 @@
         <module>desing-patterns</module>
         <module>graphs</module>
         <module>search-algorithms</module>
+        <module>data_compression</module>
     </modules>
 
 
