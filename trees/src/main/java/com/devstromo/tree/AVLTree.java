@@ -2,6 +2,8 @@ package com.devstromo.tree;
 
 import static java.lang.Math.max;
 
+import java.util.List;
+
 public class AVLTree<T extends Comparable<T>> implements Tree<T> {
 
     private Node<T> root;
@@ -45,6 +47,11 @@ public class AVLTree<T extends Comparable<T>> implements Tree<T> {
     @Override
     public boolean isEmpty() {
         return root == null;
+    }
+
+    @Override
+    public List<T> getSortedElements() {
+        return null;
     }
 
     private T getMin(Node<T> node) {

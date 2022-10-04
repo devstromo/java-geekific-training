@@ -3,6 +3,8 @@ package com.devstromo.tree.red_black;
 import static java.awt.Color.BLACK;
 import static java.awt.Color.RED;
 
+import java.util.List;
+
 import com.devstromo.tree.Tree;
 
 public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
@@ -46,6 +48,11 @@ public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
     @Override
     public boolean isEmpty() {
         return root == null;
+    }
+
+    @Override
+    public List<T> getSortedElements() {
+        return null;
     }
 
     private T getMin(Node<T> node) {

@@ -1,5 +1,8 @@
 package com.devstromo.tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
     private Node<T> root;
 
@@ -44,6 +47,13 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
         return root == null;
     }
 
+    @Override
+    public List<T> getSortedElements() {
+        List<T> list= new ArrayList<>();
+        sort(root, list);
+        return list;
+    }
+
     private T getMin(Node<T> node) {
         if (node.getLeftChild() != null) {
             return getMin(node.getLeftChild());
@@ -61,7 +71,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
     private void traverseInOrder(Node<T> node) {
         if (node != null) {
             traverseInOrder(node.getLeftChild());
-            System.out.println(node);
+            System.out.println(node.getData());
             traverseInOrder(node.getRightChild());
         }
     }
@@ -129,5 +139,14 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 
         }
         return node;
+    }
+
+    private void sort(Node<T> node, List<T> list){
+        if(node == null){
+            return;
+        }
+        sort(node.getLeftChild(), list);
+        list.add(node.getData());
+        sort(node.getRightChild(), list);
     }
 }

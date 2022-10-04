@@ -1,5 +1,7 @@
 package com.devstromo.tree;
 
+import java.util.List;
+
 public interface Tree<T extends Comparable<T>> {
 
     Tree<T> insert(T data);
@@ -13,4 +15,6 @@ public interface Tree<T extends Comparable<T>> {
     T getMin();
 
     boolean isEmpty();
+
+    List<T> getSortedElements();
 }
