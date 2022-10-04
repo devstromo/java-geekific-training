@@ -11,6 +11,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Counting Sort
     - Quicksort
     - Radix Sort
+    - Tree Sort
 
 - ### Trees
 

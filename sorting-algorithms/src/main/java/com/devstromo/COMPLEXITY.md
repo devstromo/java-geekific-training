@@ -97,3 +97,12 @@ Bucket Sort shines if the elements we are trying to sort are uniformly distribut
 - Space Complexity: O(n+k)
 - Stability: Yes
 
+### TREE SORT
+
+- Best: Ω(n*log n)
+- Average: Θ(n*log n)
+- Worst: O(n<sup>2</sup>)
+- Space Complexity: O(n)
+- Stability: Yes
+
+
