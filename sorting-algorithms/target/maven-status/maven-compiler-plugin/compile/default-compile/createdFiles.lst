@@ -1,0 +1,8 @@
+com\devstromo\BucketSort.class
+com\devstromo\RadixSort.class
+com\devstromo\ShellSort.class
+com\devstromo\CountingSort.class
+com\devstromo\MergeSort.class
+com\devstromo\TimSort.class
+com\devstromo\InsertionSort.class
+com\devstromo\QuickSort.class

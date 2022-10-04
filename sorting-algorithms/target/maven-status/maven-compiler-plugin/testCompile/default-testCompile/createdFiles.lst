@@ -1,0 +1,7 @@
+com\devstromo\MergeSortTest.class
+com\devstromo\BucketSortTest.class
+com\devstromo\CountingSortTest.class
+com\devstromo\TimSortTest.class
+com\devstromo\ShellSortTest.class
+com\devstromo\QuickSortTest.class
+com\devstromo\RadixSortTest.class

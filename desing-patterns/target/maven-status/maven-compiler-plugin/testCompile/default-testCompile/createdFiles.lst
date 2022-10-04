@@ -1,0 +1,8 @@
+com\devstromo\builder\CarTest.class
+com\devstromo\singleton\SingletonTest.class
+com\devstromo\factory\abstract_factory\CompanyTest.class
+com\devstromo\behavioral\memento\EditorTest.class
+com\devstromo\behavioral\command_pattern\RoomTest.class
+com\devstromo\observer\ObserverTest.class
+com\devstromo\behavioral\chain_of_responsability\AuthServiceTest.class
+com\devstromo\factory\RestaurantTest.class
