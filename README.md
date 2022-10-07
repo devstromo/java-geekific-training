@@ -12,6 +12,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Quicksort
     - Radix Sort
     - Tree Sort
+    - Dual Pivot Quicksort
 
 - ### Trees
 
