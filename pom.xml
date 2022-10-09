@@ -19,6 +19,7 @@
         <module>graphs</module>
         <module>search-algorithms</module>
         <module>data_compression</module>
+        <module>regex</module>
     </modules>
 
 
