@@ -21,6 +21,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Red-Black Trees
     - Heaps & Heap Sort
     - Trie
+    - Splay
 
 - ### Graph
 
