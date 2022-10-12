@@ -12,6 +12,7 @@
         <module name="sorting-algorithms" />
         <module name="data_compression" />
         <module name="search-algorithms" />
+        <module name="thread" />
         <module name="desing-patterns" />
         <module name="trees" />
       </profile>
