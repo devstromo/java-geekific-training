@@ -46,6 +46,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Memento Pattern
     - Decorator Pattern
     - Strategy Pattern
+    - State Pattern
 
 - ### Search Algorithms(Add by me)
 
