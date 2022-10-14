@@ -29,6 +29,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - BFS
     - Dijkstra's Algorithm
     - Ford-Fulkerson(Max Flow)
+    - Cycle Detection for Directed and Undirected Graphs
 
 - ### Design Patterns
 
