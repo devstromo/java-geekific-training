@@ -30,6 +30,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Dijkstra's Algorithm
     - Ford-Fulkerson(Max Flow)
     - Cycle Detection for Directed and Undirected Graphs
+    - Kruskal Algorithm(MST)
 
 - ### Design Patterns
 
