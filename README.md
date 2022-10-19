@@ -31,6 +31,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Ford-Fulkerson(Max Flow)
     - Cycle Detection for Directed and Undirected Graphs
     - Kruskal Algorithm(MST)
+    - Prim(MST)
 
 - ### Design Patterns
 
