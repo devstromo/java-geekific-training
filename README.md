@@ -22,6 +22,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Heaps & Heap Sort
     - Trie
     - Splay
+    - Ternary Tree(TST)
 
 - ### Graph
 
