@@ -50,6 +50,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Decorator Pattern
     - Strategy Pattern
     - State Pattern
+    - Visitor Pattern
 
 - ### Search Algorithms(Add by me)
 
