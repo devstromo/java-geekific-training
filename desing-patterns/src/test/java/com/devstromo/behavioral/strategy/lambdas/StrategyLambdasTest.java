@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 class StrategyLambdasTest {
 
-    private List<Integer> numbers = IntStream.range(0, 11)
+    private final List<Integer> numbers = IntStream.range(0, 11)
         .boxed()
         .toList();
 

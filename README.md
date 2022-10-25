@@ -52,6 +52,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Strategy Pattern
     - State Pattern
     - Visitor Pattern
+    - Iterator Pattern
 
 - ### Search Algorithms(Add by me)
 
