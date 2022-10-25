@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class DepthFirstIterator<T> implements Iterator<T> {
     private final Vertex<T> startVertex;
-    private Deque<Vertex<T>> stack = new LinkedList<>();
+    private final Deque<Vertex<T>> stack = new LinkedList<>();
 
     public DepthFirstIterator(Vertex<T> startVertex) {
         this.startVertex = startVertex;
