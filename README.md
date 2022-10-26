@@ -53,6 +53,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - State Pattern
     - Visitor Pattern
     - Iterator Pattern
+    - Flyweight Pattern
 
 - ### Search Algorithms(Add by me)
 
