@@ -66,6 +66,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
 
     - Run-Length Encoding
     - LZW(Lempel-Ziv-Welch)
+    - Huffman Coding
     
 - ### Regex
 
