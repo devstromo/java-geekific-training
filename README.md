@@ -54,6 +54,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Visitor Pattern
     - Iterator Pattern
     - Flyweight Pattern
+    - Bridge Pattern
 
 - ### Search Algorithms(Add by me)
 
