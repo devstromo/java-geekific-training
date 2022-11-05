@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+import com.devstromo.creational.factory.builder.Car;
+import com.devstromo.creational.factory.builder.CarBuilder;
+import com.devstromo.creational.factory.builder.Director;
+
 class CarTest {
 
     @Test

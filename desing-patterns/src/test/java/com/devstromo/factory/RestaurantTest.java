@@ -2,10 +2,10 @@ package com.devstromo.factory;
 
 import org.junit.jupiter.api.Test;
 
-import com.devstromo.factory.method.BeefBurgerRestaurant;
-import com.devstromo.factory.method.Burger;
-import com.devstromo.factory.method.Restaurant;
-import com.devstromo.factory.method.VeggieBurgerRestaurant;
+import com.devstromo.creational.factory.method.BeefBurgerRestaurant;
+import com.devstromo.creational.factory.method.Burger;
+import com.devstromo.creational.factory.method.Restaurant;
+import com.devstromo.creational.factory.method.VeggieBurgerRestaurant;
 
 class RestaurantTest {
 
