@@ -55,6 +55,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Iterator Pattern
     - Flyweight Pattern
     - Bridge Pattern
+    - Null Object Pattern(a special case of the Strategy Pattern)
 
 - ### Search Algorithms(Add by me)
 
