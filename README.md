@@ -58,6 +58,7 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
     - Null Object Pattern(a special case of the Strategy Pattern)
     - Proxy Pattern
     - Adapter Pattern
+    - Composite Pattern
 
 - ### Search Algorithms(Add by me)
 
