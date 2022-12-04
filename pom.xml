@@ -21,6 +21,7 @@
         <module>data_compression</module>
         <module>regex</module>
         <module>thread</module>
+        <module>interviews</module>
     </modules>
 
 

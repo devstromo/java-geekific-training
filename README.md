@@ -79,3 +79,6 @@ A repo to training [Geekific](https://www.youtube.com/c/Geekific) youtube channe
 - ### Concurrency
    
      -  Locks, Monitors and Semaphores
+
+- ### Interviews
+     - Kadane's Algorithm

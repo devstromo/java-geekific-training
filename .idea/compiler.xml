@@ -15,6 +15,7 @@
         <module name="thread" />
         <module name="desing-patterns" />
         <module name="trees" />
+        <module name="interviews" />
       </profile>
     </annotationProcessing>
   </component>
