@@ -1,4 +1,4 @@
-package queue_to_stack;
+package queues_using_stacks;
 
 import java.util.Deque;
 import java.util.LinkedList;
