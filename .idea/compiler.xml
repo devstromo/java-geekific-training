@@ -11,6 +11,7 @@
         <module name="regex" />
         <module name="sorting-algorithms" />
         <module name="data_compression" />
+        <module name="unit_testing_and_tdd" />
         <module name="search-algorithms" />
         <module name="thread" />
         <module name="desing-patterns" />
