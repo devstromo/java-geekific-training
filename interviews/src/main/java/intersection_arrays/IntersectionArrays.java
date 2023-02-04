@@ -1,5 +1,7 @@
 package intersection_arrays;
 
+import static java.util.Arrays.binarySearch;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -75,6 +77,27 @@ public class IntersectionArrays {
                 idx1++;
             } else {
                 idx2++;
+            }
+        }
+
+        return result.stream()
+          .mapToInt(Integer::intValue)
+          .toArray();
+    }
+
+    // O(M*logN) -> m <<<<n
+    public static int[] intersectionWithSortedArraysAndBinarySearch(int[] nums1, int[] nums2) {
+        var map = new HashMap<Integer, Integer>();
+        for (int num : nums1) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        var set2 = Arrays.stream(nums2)
+          .boxed()
+          .collect(Collectors.toSet());
+        var result = new HashSet<Integer>();
+        for (int num : set2) {
+            if (binarySearch(nums1, num) > 0) {
+                result.add(num);
             }
         }
 
