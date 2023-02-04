@@ -56,4 +56,30 @@ public class IntersectionArrays {
           .mapToInt(Integer::intValue)
           .toArray();
     }
+
+    public static int[] intersectionWithSortedArrays(int[] nums1, int[] nums2) {
+        var map = new HashMap<Integer, Integer>();
+        for (int num : nums1) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        var result = new HashSet<Integer>();
+        var idx1 = 0;
+        var idx2 = 0;
+        while (idx1 < nums1.length && idx2 < nums2.length) {
+            if (nums1[idx1] == nums2[idx2]) {
+                result.add(nums1[idx1]);
+                idx1++;
+                idx2++;
+            } else if (nums1[idx1] < nums2[idx2]) {
+                idx1++;
+            } else {
+                idx2++;
+            }
+        }
+
+        return result.stream()
+          .mapToInt(Integer::intValue)
+          .toArray();
+    }
 }
