@@ -23,6 +23,7 @@
         <module>thread</module>
         <module>interviews</module>
         <module>unit_testing_and_tdd</module>
+        <module>data-structure</module>
     </modules>
 
 
