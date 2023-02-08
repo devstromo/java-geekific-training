@@ -1,5 +1,7 @@
 package com.devstromo.stack;
 
+import com.devstromo.Node;
+
 public class LinkedLinkStack<T> {
     private Node<T> root;
     private int size;

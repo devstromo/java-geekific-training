@@ -1,4 +1,4 @@
-package com.devstromo.stack;
+package com.devstromo;
 
 import lombok.Data;
 
