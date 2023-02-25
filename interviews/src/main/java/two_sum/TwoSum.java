@@ -1,7 +1,9 @@
 package two_sum;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public class TwoSum {
 
@@ -25,5 +27,17 @@ public class TwoSum {
             map.put(nums[i], i);
         }
         return new int[2];
+    }
+
+    // user for three sum
+    public static List<Integer> twoSum(int[] nums, int target, int start) {
+        var set = new HashSet<Integer>();
+        for (var i = start; i < nums.length; i++) {
+            if (set.contains(target - nums[i])) {
+                return List.of(target - nums[i], nums[i]);
+            }
+            set.add(nums[i]);
+        }
+        return Collections.emptyList();
     }
 }
