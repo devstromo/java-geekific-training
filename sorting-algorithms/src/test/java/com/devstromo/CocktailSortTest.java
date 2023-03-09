@@ -16,6 +16,5 @@ public class CocktailSortTest {
         new CocktailSort<>(input).sort();
         out.println(Arrays.toString(input));
         assertArrayEquals(expected, input);
-//        assertEquals("[11, 17, 22, 32, 37, 42, 51, 63, 75, 82]", Arrays.toString(sortedArray.toArray()));
     }
 }
