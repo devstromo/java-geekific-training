@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import linked_list.sentinelNode.ListNode;
+import linked_list.sentinelNode.SentinelNode;
+
 class SentinelNodeUnitTest {
     SentinelNode sentinelNode = new SentinelNode();
 

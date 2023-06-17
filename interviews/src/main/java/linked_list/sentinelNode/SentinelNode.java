@@ -1,4 +1,4 @@
-package linked_list;
+package linked_list.sentinelNode;
 
 class SentinelNode {
     public ListNode partition(ListNode head, int x) {
