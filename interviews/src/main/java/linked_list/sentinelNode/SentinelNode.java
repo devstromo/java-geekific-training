@@ -1,6 +1,6 @@
 package linked_list.sentinelNode;
 
-class SentinelNode {
+public class SentinelNode {
     public ListNode partition(ListNode head, int x) {
         var headLow = getFirstNodeSmallerThanX(head, x);
         var headHigh = getFirstNodeEqualsOrBiggerThanX(head, x);
