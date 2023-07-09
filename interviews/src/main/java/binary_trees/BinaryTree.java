@@ -123,4 +123,59 @@ public class BinaryTree {
         var right = minDepth(node.right());
         return (left == 0 || right == 0) ? left + right + 1 : Math.min(left, right) + 1;
     }
+
+    public List<Integer> rightSideView(TreeNode root) {
+        var answer = new ArrayList<Integer>();
+        if (root == null)
+            return answer;
+        var queue = new LinkedList<TreeNode>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            var size = queue.size();
+            for (int i = 0; i < size; i++) {
+                var node = queue.poll();
+                if (node.left() != null)
+                    queue.add(node.left());
+                if (node.right() != null)
+                    queue.add(node.right());
+
+                if (i == size - 1)
+                    answer.add(node.data());
+            }
+        }
+        return answer;
+    }
+
+    public TreeNodeNext connect(TreeNodeNext root) {
+        if (root == null)
+            return null;
+        var queue = new LinkedList<TreeNodeNext>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            var size = queue.size();
+            for (int i = 0; i < size; i++) {
+                var node = queue.poll();
+                if (node.left != null)
+                    queue.add(node.left);
+                if (node.right != null)
+                    queue.add(node.right);
+                node.next = i == size - 1 ? null : queue.peek();
+            }
+        }
+        return root;
+    }
+
+    public TreeNodeNext connectPerfectTree(TreeNodeNext node) {
+        if (node == null)
+            return null;
+        if (node.left != null) {
+            node.left.next = node.right;
+        }
+        if (node.right != null) {
+            node.right.next = node.next != null ? node.next.left : null;
+        }
+        connectPerfectTree(node.left);
+        connectPerfectTree(node.right);
+        return node;
+    }
 }
