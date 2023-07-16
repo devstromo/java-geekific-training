@@ -1,11 +1,20 @@
 package binary_trees;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 public class BinaryTree {
+
+    int preorderIndex;
+
+    int postorderIndex;
+    Map<Integer, Integer> inorderIndexMap = new HashMap<>();
+    Map<Integer, Integer> postorderIndexMap = new HashMap<>();
 
     public List<List<Integer>> levelOrder(Node root) {
         var result = new ArrayList<List<Integer>>();
@@ -178,4 +187,39 @@ public class BinaryTree {
         connectPerfectTree(node.right);
         return node;
     }
+
+    public TreeNode arrayToTree(int[] preorder, int[] inorder) {
+        for (int i = 0; i < inorder.length; i++) {
+            inorderIndexMap.put(inorder[i], i);
+        }
+        preorderIndex = 0;
+        return arrayToTree(preorder, inorder, 0, inorder.length - 1);
+    }
+
+    private TreeNode arrayToTree(int[] preorder, int[] inorder, int left, int right) {
+        if (left > right)
+            return null;
+        var rootValue = preorder[preorderIndex++];
+        var leftSubTree = arrayToTree(preorder, inorder, left, inorderIndexMap.get(rootValue) - 1);
+        var rightSubTree = arrayToTree(preorder, inorder, inorderIndexMap.get(rootValue) + 1, right);
+        return new TreeNode(rootValue, leftSubTree, rightSubTree);
+    }
+
+    public TreeNode arrayToTreePostOrder(int[] postorder, int[] inorder) {
+        for (int i = 0; i < inorder.length; i++) {
+            postorderIndexMap.put(inorder[i], i);
+        }
+        preorderIndex = postorder.length - 1;
+        return arrayToTreePostOrder(postorder, 0, inorder.length - 1);
+    }
+
+    private TreeNode arrayToTreePostOrder(int[] postorder, int left, int right) {
+        if (left > right)
+            return null;
+        var rootValue = postorder[postorderIndex--];
+        var rightSubTree = arrayToTreePostOrder(postorder, postorderIndexMap.get(rootValue) + 1, right);
+        var leftSubTree = arrayToTreePostOrder(postorder, left, postorderIndexMap.get(rootValue) - 1);
+        return new TreeNode(rootValue, leftSubTree, rightSubTree);
+    }
+
 }
