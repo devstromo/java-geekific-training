@@ -17,7 +17,7 @@ public class CoinChangeII {
         return dp[amount][coins.length - 1];
     }
 
-    public int changeBest(int amount, int[] coins) {
+    public int changeImprovement(int amount, int[] coins) {
         var prev = new int[amount + 1];
         prev[0] = 1;
         for (int i = 1; i <= amount; i++) {
@@ -33,5 +33,17 @@ public class CoinChangeII {
         }
 
         return prev[amount];
+    }
+
+    public int changeBestLinear(int amount, int[] coins) {
+        var dp = new int[amount + 1];
+        dp[0] = 1;
+        for (int j = 0; j < coins.length; j++) {
+            for (int i = coins[j]; i <= amount; i++) {
+                dp[i] += dp[i - coins[j]];
+            }
+        }
+
+        return dp[amount];
     }
 }
