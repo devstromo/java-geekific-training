@@ -17,6 +17,7 @@ class CoinChangeIIUnitTest {
     public void testCoinChangeIIImprovement() {
         assertEquals(4, coinChangeII.changeImprovement(10, new int[]{2, 3, 5}));
     }
+
     @Test
     public void testCoinChangeIILinear() {
         assertEquals(4, coinChangeII.changeBestLinear(10, new int[]{2, 3, 5}));
