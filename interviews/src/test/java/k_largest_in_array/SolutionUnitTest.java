@@ -17,4 +17,9 @@ class SolutionUnitTest {
         assertEquals(4, solution.findKthLargestMinimumHeap(new int[]{5, 4, 3, 2, 2, 1}, 2));
     }
 
+    @Test
+    public void testFindKthLargest2() {
+        assertEquals(4, solution.findKthLargestMaxHeap(new int[]{5, 4, 3, 2, 2, 1}, 2));
+    }
+
 }

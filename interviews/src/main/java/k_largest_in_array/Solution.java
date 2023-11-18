@@ -1,6 +1,7 @@
 package k_largest_in_array;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class Solution {
@@ -21,5 +22,15 @@ public class Solution {
             }
         }
         return minHeap.peek();
+    }
+
+    public int findKthLargestMaxHeap(int[] nums, int k) {
+        var maxHeap = new PriorityQueue<Integer>(Collections.reverseOrder());
+        maxHeap.addAll(Arrays.stream(nums).boxed().toList());
+        while (k > 1) {
+            maxHeap.poll();
+            k--;
+        }
+        return maxHeap.poll();
     }
 }
