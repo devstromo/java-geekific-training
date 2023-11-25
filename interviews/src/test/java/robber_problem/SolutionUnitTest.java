@@ -12,5 +12,9 @@ class SolutionUnitTest {
     public void testRobberRecursion() {
         assertEquals(16, solution.robRecursion(new int[]{2, 7, 9, 3, 1, 5}));
     }
+    @Test
+    public void testRobberDPTabulation() {
+        assertEquals(16, solution.robTabulation(new int[]{2, 7, 9, 3, 1, 5}));
+    }
 
 }
