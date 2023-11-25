@@ -22,6 +22,16 @@ public class Solution {
         return dp[nums.length - 1];
     }
 
+    public int rob(int[] nums) {
+        int prev1 = 0, prev2 = 0;
+        for (int num : nums) {
+            int curr = Math.max(num + prev2, prev1);
+            prev2 = prev1;
+            prev1 = curr;
+        }
+        return prev1;
+    }
+
     private int getMaxAmount(int[] nums, int n) {
         if (n < 0) return 0;
         if (n == 0) return nums[0];
