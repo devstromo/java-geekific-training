@@ -23,4 +23,9 @@ class SolutionUnitTest {
         assertEquals(16, solution.rob(new int[]{2, 7, 9, 3, 1, 5}));
     }
 
+    @Test
+    public void testRobberCircularArrangement() {
+        assertEquals(15, solution.robCircular(new int[]{2, 7, 9, 3, 1, 5}));
+    }
+
 }

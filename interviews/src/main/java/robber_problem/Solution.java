@@ -32,6 +32,24 @@ public class Solution {
         return prev1;
     }
 
+    // Houses are arranged in circular order
+    public int robCircular(int[] nums) {
+        if (nums.length == 1) return nums[0];
+
+        // rob first house or second house
+        return Math.max(rob(nums, 0, nums.length - 2), rob(nums, 1, nums.length - 1));
+    }
+
+    private int rob(int[] nums, int low, int high) {
+        int prev1 = 0, prev2 = 0;
+        for (int i = low; i <= high; i++) {
+            int curr = Math.max(nums[i] + prev2, prev1);
+            prev2 = prev1;
+            prev1 = curr;
+        }
+        return prev1;
+    }
+
     private int getMaxAmount(int[] nums, int n) {
         if (n < 0) return 0;
         if (n == 0) return nums[0];
