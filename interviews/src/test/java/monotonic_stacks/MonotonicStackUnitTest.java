@@ -15,4 +15,11 @@ class MonotonicStackUnitTest {
         assertArrayEquals(expected, solution.dailyTemperature(input));
     }
 
+    @Test
+    void testDailyTemperaturesMonotonicStack() {
+        var input = new int[]{58, 56, 61, 55, 57, 44, 40, 35, 46};
+        var expected = new int[]{2, 1, 0, 1, 0, 3, 2, 1, 0};
+        assertArrayEquals(expected, solution.dailyTemperatureMonotonicStack(input));
+    }
+
 }
