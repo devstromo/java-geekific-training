@@ -33,4 +33,19 @@ public class MoveZeros {
         System.arraycopy(arr, 0, nums, 0, nums.length);
         return arr;
     }
+
+    // T: O(n)
+    // S: O(1)
+    public static int[] moveZerosLinearInPlace(int[] nums) {
+        var insertPos = 0;
+        for (int num : nums) {
+            if (num != 0) {
+                nums[insertPos++] = num;
+            }
+        }
+        while (insertPos < nums.length) {
+            nums[insertPos++] = 0;
+        }
+        return nums;
+    }
 }
