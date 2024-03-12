@@ -3,7 +3,7 @@ package move_zeros;
 public class MoveZeros {
 
     // O(n^2)
-    public static int[] moveZeros(int[] nums) {
+    public static int[] moveZerosBruteForce(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length - 1; j++) {
                 if (nums[j] == 0) {
@@ -12,7 +12,6 @@ public class MoveZeros {
                     nums[j + 1] = temp;
                 }
             }
-
         }
         return nums;
     }
